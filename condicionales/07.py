@@ -1,3 +1,6 @@
+import os
+os.system("cls")
+
 numero1 = int(input("Primer número: "))
 numero2 = int(input("Segundo número: "))
 numero3 = int(input("Tercer número: "))
