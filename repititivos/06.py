@@ -1,4 +1,4 @@
-import os 
+import os  
 os.system("cls")
 
 n = int(input("Ingrese un número n: "))
