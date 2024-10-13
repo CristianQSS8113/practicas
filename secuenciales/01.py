@@ -1,3 +1,6 @@
+import os
+os.system("cls")
+
 mujeres=int(input("Ingrese cantidad de mujeres: "))
 varones=int(input("Ingrese cantidad de varones: "))
 

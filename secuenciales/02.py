@@ -1,3 +1,6 @@
+import os
+os.system("cls")
+
 medida= int ( input ( " Ingrese metros : " ) )
 
 centimetros = medida * 100

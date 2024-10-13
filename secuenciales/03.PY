@@ -1,3 +1,6 @@
+import os
+os.system("cls")
+
 longitud_km = int ( input ( " Ingrese el primer tramo en KM : " ))
 longitud_pies = int ( input ( " Ingrese el segundo tramo en pies :" ))
 longitud_millas = int ( input ( "Ingrese el tercer tramo en millas : " ))
