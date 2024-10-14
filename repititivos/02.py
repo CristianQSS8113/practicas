@@ -1,17 +1,26 @@
 import os  
 os.system("cls")
 
-num1 = int(input("Primer número: "))
-num2 = int(input("Segundo número: "))
+def multiplicar( n1, n2):
+    producto=0
+    while n2 > 0 :
+        n2 -= 1
+        producto +=n1
+    return producto
 
-resultado = 0
-contador = abs(num2)
+def multiplica(n1 , n2):
+    if n2 == 1 : return n1 
+    return n1 + multiplica (n1, n2 - 1)
 
-while contador > 0:
-    resultado += num1
-    contador -= 1
+multiplicando = int(input("Multiplicando: "))
+multiplicador = int(input("Multiplicador: "))
 
-if (num1 < 0) ^ (num2 < 0):
-    resultado = -resultado
+print(f"Producto = { multiplica(multiplicando, multiplicador)}")
 
-print(f"El resultado de la multiplicación es: {resultado}")
+#producto = 0
+
+#while multiplicando > 0:
+#    multiplicando -= 1
+#    producto += multiplicando
+
+#print(f"El resultado de la multiplicación es: {producto}")
