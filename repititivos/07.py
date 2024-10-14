@@ -1,15 +1,17 @@
 import os 
 os.system("cls")
 
-n = int(input("Ingrese un número entero no negativo: "))
-factorial = 1
-i = 1
+def factorial (n):
+    factorial = 1
+    while n > 1 :
+        n -=1
 
-if n < 0:
-    print("El factorial no está definido para números negativos.")
-else:
-    while i <= n:
-        factorial *= i
-        i += 1
+    return factorial
 
-print(f"El factorial de {n} es {factorial}.")
+def  factorial_r (n):
+    if n == 1 : return n 
+    return n * factorial_r (n - 1)
+
+numero= int(input("Numero: "))
+
+print(f"Factorial = {factorial_r(numero)}")
