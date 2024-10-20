@@ -17,10 +17,3 @@ multiplicador = int(input("Multiplicador: "))
 
 print(f"Producto = { multiplica(multiplicando, multiplicador)}")
 
-#producto = 0
-
-#while multiplicando > 0:
-#    multiplicando -= 1
-#    producto += multiplicando
-
-#print(f"El resultado de la multiplicación es: {producto}")

@@ -19,6 +19,5 @@ qui_prom = (float(input("Quím. Práctica 1: ")) * 0.1 +
             float(input("Quím. Ex. Parcial: ")) * 0.25 +
             float(input("Quím. Ex. Final: ")) * 0.25)
 
-# Resultados
 for materia, prom in zip(["Matemática", "Física", "Química"], [mat_prom, fis_prom, qui_prom]):
     print(f"{materia}: {prom:.2f} - {'Aprobado' if prom >= 13 else 'Desaprobado'}")
